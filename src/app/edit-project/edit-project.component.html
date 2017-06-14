@@ -1,0 +1,33 @@
+<h3>Update Project to Inventory</h3>
+<div>
+  <div>
+    <label>Project Title:</label>
+    <br>
+    <input [(ngModel)]="title">
+  </div>
+
+  <div>
+    <label>Project Author:</label>
+    <br>
+    <input [(ngModel)]="author">
+  </div>
+
+  <div>
+    <label>Project Category:</label>
+    <br>
+    <input [(ngModel)]="category">
+  </div>
+
+  <div>
+    <label>Project Goal:</label>
+    <br>
+    <input [(ngModel)]="goal">
+  </div>
+
+  <div>
+    <label>Project Description:</label>
+    <br>
+    <textarea [(ngModel)]="description"></textarea>
+  </div>
+   <button (click)="updateProject()">Update</button>
+</div>

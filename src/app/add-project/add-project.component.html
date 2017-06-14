@@ -1,0 +1,33 @@
+<h3>Add New Project to Inventory</h3>
+<div>
+  <div>
+    <label>Project Title:</label>
+    <br>
+    <input #newTitle>
+  </div>
+
+  <div>
+    <label>Project Author:</label>
+    <br>
+    <input #newAuthor>
+  </div>
+
+  <div>
+    <label>Project Category:</label>
+    <br>
+    <input #newCategory>
+  </div>
+
+  <div>
+    <label>Project Goal:</label>
+    <br>
+    <input #newGoal>
+  </div>
+
+  <div>
+    <label>Project Description:</label>
+    <br>
+    <textarea #newDescription></textarea>
+  </div>
+   <button (click)="addProject(newTitle.value, newAuthor.value, newCategory.value, newGoal.value, newDescription.value); newTitle.value = ''; newAuthor.value = ''; newCategory.value = ''; newGoal.value = ''; newDescription.value = '';">Save</button>
+</div>

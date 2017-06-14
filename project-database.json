@@ -1,0 +1,16 @@
+{ "projects": [
+  {
+    "title": "Kitchen Class",
+    "category": "food",
+    "author": " FoodWorks Madison",
+    "description": "FoodWorks Madison was started by Jonny Hunter of Underground Food Collective, Matt Feifarek of Slow Food Madison, and Chandra Miller Fienen of Starting Block Madison. We started FoodWorks to serve our community through the connective power of food. What are we working on and how did we get here, and most importantly, why do we need you? Well...",
+    "goal": 5000
+  },
+  {
+    "title": "Exorcise The Demons",
+    "category": "game",
+    "author": " Midnight Games",
+    "description": "As we are fantasy games enthusiasts since forever, our ambition is to present our interpretation of this genre, by bringing an immersive and original experience to the players.Exorcise The Demons is an exorcism-themed communication game based on asymmetric cooperative gameplay.The first player, in front of the screen, will play as an exorcist and will accomplish rituals in order to ban the demons haunting the place. The other players, who won't be looking at the screen, will have to read the Book Of Rituals, which is containing all the necessary informations to complete those rituals correctly.",
+    "goal": 10000
+  }
+]}

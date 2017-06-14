@@ -1,0 +1,4 @@
+<h2>Projects</h2>
+<ul class="list-group">
+ <li *ngFor="let project of projects | async" class="list-group-item"><a [routerLink]="['/projects/' + project.$key]">{{project.title}}</a></li>
+</ul>

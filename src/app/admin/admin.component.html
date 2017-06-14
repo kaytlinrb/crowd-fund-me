@@ -1,0 +1,12 @@
+
+<h2>Projects</h2>
+<div class="list-group">
+  <div *ngFor="let project of projects | async" class="list-group-item">
+     <p><a [routerLink]="['/projects/' + project.$key]">{{project.title}}</a>
+     </p>
+     <a class="btn btn-warning ml-4" [routerLink]= "['/admin/edit/project/' + project.$key]">Edit</a>
+     <a class="btn btn-danger ml-1" (click)="deleteProject(project.$key)">Delete</a>
+  </div>
+
+
+</div>
