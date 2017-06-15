@@ -1,0 +1,19 @@
+<button class="btn btn-info" (click)="revealFundForm()">Fund Me</button>
+<div *ngIf= "fundFormShowing">
+<h3>Funding Form</h3>
+<div>
+  <div>
+    <label>Your Name:</label>
+    <br>
+    <input [(ngModel)]="contributor">
+  </div>
+
+  <div>
+    <label>Amount to Donate:</label>
+    <br>
+    <input [(ngModel)]="donation">
+  </div>
+
+<button class="btn btn-warning" (click)="deductFromGoal()">Fund</button>
+
+</div>

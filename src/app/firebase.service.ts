@@ -23,8 +23,16 @@ export class FirebaseService {
   editProject(id, updatedProject){
     this.projects.update(id,updatedProject);
   }
+  updateProjectGoal(id, updatedGoal){
+    var projectToUpdate = this.getProjectById(id);
+    projectToUpdate.update({goal: updatedGoal});
+  }
   deleteProject(id){
     this.projects.remove(id);
+  }
+  updateProjectFav(id, fav){
+    var projectToUpdate = this.getProjectById(id);
+    projectToUpdate.update({favorite: fav});
   }
 
 }

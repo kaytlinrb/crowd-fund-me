@@ -15,7 +15,7 @@ export class AddProjectComponent implements OnInit {
   ngOnInit() {
   }
 
-  addProject( title:string, category:string, author:string, goal:number, description:string) {
+  addProject( title:string, category:string, author:string,  goal:number, description:string) {
     var newProject: Project = new Project(title, category, author, goal, description)
     this.firebaseService.pushProject(newProject);
     this.router.navigate(['/']);

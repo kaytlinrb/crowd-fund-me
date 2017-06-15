@@ -11,10 +11,15 @@ import { FirebaseListObservable } from 'angularfire2/database';
 
 export class ProjectsComponent implements OnInit {
   projects: FirebaseListObservable<any[]>;
+  filterByCategory: string = "all";
 
   constructor(private firebaseService: FirebaseService) { }
 
   ngOnInit() {
     this.projects = this.firebaseService.getProjects();
+  }
+
+  onChange(optionFromMenu) {
+    this.filterByCategory = optionFromMenu;
   }
 }

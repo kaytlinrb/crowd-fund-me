@@ -1,4 +1,10 @@
 <h2>Projects</h2>
+<select (change)="onChange($event.target.value)">
+      <option value="all" selected="selected">All Projects</option>
+      <option value="game" >Game</option>
+      <option value="food" >Food</option>
+      <option value="other">Other</option>
+    </select>
 <ul class="list-group">
- <li *ngFor="let project of projects | async" class="list-group-item"><a [routerLink]="['/projects/' + project.$key]">{{project.title}}</a></li>
+ <li *ngFor="let project of projects | async | categoryPipe:filterByCategory" class="list-group-item"><a [routerLink]="['/projects/' + project.$key]">{{project.title}}</a></li>
 </ul>

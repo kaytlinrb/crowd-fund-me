@@ -7,16 +7,22 @@
   </div>
 
   <div>
+    <label>Project Category:</label>
+    <br>
+    <select #newCategory>
+      <option value="food">Food</option>
+      <option value="game">Game</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
+
+  <div>
     <label>Project Author:</label>
     <br>
     <input #newAuthor>
   </div>
 
-  <div>
-    <label>Project Category:</label>
-    <br>
-    <input #newCategory>
-  </div>
+
 
   <div>
     <label>Project Goal:</label>
@@ -29,5 +35,5 @@
     <br>
     <textarea #newDescription></textarea>
   </div>
-   <button (click)="addProject(newTitle.value, newAuthor.value, newCategory.value, newGoal.value, newDescription.value); newTitle.value = ''; newAuthor.value = ''; newCategory.value = ''; newGoal.value = ''; newDescription.value = '';">Save</button>
+   <button (click)="addProject(newTitle.value, newCategory.value, newAuthor.value,  newGoal.value, newDescription.value); newTitle.value = ''; newAuthor.value = ''; newCategory.value = ''; newGoal.value = ''; newDescription.value = '';">Save</button>
 </div>

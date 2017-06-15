@@ -15,6 +15,8 @@ import { AddProjectComponent } from './add-project/add-project.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditProjectComponent } from './edit-project/edit-project.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FundMeComponent } from './fund-me/fund-me.component';
+import { CategoryPipe } from './category.pipe';
 
 
 const appRoutes: Routes = [
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     AddProjectComponent,
     AdminComponent,
     EditProjectComponent,
-    NavbarComponent
+    NavbarComponent,
+    FundMeComponent,
+    CategoryPipe
   ],
   imports: [
     BrowserModule,

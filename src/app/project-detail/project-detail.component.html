@@ -1,5 +1,8 @@
-<h1>Title: {{(project | async)?.title}}</h1>
-<h1>{{(project | async)?.author}}</h1>
-<h1>{{(project | async)?.category}}</h1>
-<h1>{{(project | async)?.goal}}</h1>
-<p>{{(project | async)?.description}}</p>
+<a (click)="favoriteProject(true)" *ngIf="project?.favorite === false"><img src="/assets/img/unfav.png"/></a>
+<a (click)="favoriteProject(false)" *ngIf="project?.favorite === true"><img src="/assets/img/fav.png"/></a>
+<h1>Title: {{(project)?.title}}</h1>
+<h1>{{(project)?.author}}</h1>
+<h1>{{(project)?.category}}</h1>
+<h1>{{(project)?.goal}}</h1>
+<p>{{(project)?.description}}</p>
+<app-fund-me [projectId]="projectId"></app-fund-me>
